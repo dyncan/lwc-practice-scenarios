@@ -12,6 +12,10 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 [LWC EXCHANGE – SCENARIO 8](https://salesforcediaries.com/2023/04/16/lwc-exchange-scenario-8/)
 
 - Source code: [publicApiCallout](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/publicApiCallout)
+
+[LWC EXCHANGE – SCENARIO 6](https://salesforcediaries.com/2022/10/01/lwc-exchange-scenario-6/)
+
+- Source code: [transactionForm](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/transactionForm)
   
 ## Installation
 
