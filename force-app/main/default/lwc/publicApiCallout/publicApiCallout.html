@@ -1,0 +1,18 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Random Activity" icon-name="custom:custom14">
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+            </lightning-spinner>
+        </template>
+        <div class="slds-m-around_medium">
+            <lightning-button label="Get Random Activity" onclick={getRandomActivity}></lightning-button>
+            <template lwc:if={activity}>
+                <p><strong>Activity:</strong>{activity.activity}</p>
+                <p><strong>Type:</strong>{activity.type}</p>
+                <p><strong>Participants:</strong>{activity.participants}</p>
+                <p><strong>Key:</strong>{activity.key}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
