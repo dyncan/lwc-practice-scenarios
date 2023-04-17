@@ -21,6 +21,10 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 
 - Source code: [parent](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/parent)
 - Source code: [child](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/child)
+
+[LWC EXCHANGE – SCENARIO 2](https://salesforcediaries.com/2022/09/17/lwc-exchange-scenario-2/)
+
+- Source code: [calculator](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/calculator)
 ## Installation
 
 1. Run `chmod +x ./install-dev.sh` to set the execute permission.

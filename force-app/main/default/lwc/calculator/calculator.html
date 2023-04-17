@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Calculator" icon-name="custom:custom10">
+        <div class="slds-m-around_medium">
+            <c-calculator-input onnumberchange={handleInputChange}></c-calculator-input>
+            <lightning-button label="Add" onclick={handleAdd}></lightning-button>
+            <lightning-button label="Subtract" onclick={handleSubtract}></lightning-button>
+            <lightning-button label="Multiply" onclick={handleMultiply}></lightning-button>
+            <lightning-button label="Divide" onclick={handleDivide}></lightning-button>
+            <br /><br />
+            <lightning-input type="number" label="Result" value={result} readonly></lightning-input>
+        </div>
+    </lightning-card>
+</template>
