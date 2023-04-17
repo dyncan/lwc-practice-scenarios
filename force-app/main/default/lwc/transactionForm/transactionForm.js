@@ -15,22 +15,16 @@ export default class TransactionForm extends LightningElement {
   }
 
   // Fetch all success messages from custom metadata and store them in successMessages array
-  fetchSuccessMessages() {
-    let messages = [];
-    getSuccessCodeMessages()
-      .then((result) => {
-        result.forEach((record) => {
-          let message = {
-            value: record.Success_Code__c,
-            label: record.Message__c
-          };
-          messages.push(message);
-        });
-        this.successCodeMessages = messages;
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+  async fetchSuccessMessages() {
+    try {
+      const result = await getSuccessCodeMessages();
+      this.successCodeMessages = result.map((record) => ({
+        value: record.Success_Code__c,
+        label: record.Message__c
+      }));
+    } catch (error) {
+      this.handleErrorEvt();
+    }
   }
 
   // Handle success code change event
@@ -52,13 +46,14 @@ export default class TransactionForm extends LightningElement {
     this.template.querySelector("lightning-record-edit-form").submit(fields);
   }
 
-  // 创建记录成功后触发
+  // Triggered after successful record creation
   handleSuccess(event) {
     const transId = event.detail.id;
     this.handleSuccessEvt(transId);
     this.handleReset();
   }
 
+  // handle success toast event
   handleSuccessEvt(data) {
     const event = new ShowToastEvent({
       title: "Success!",
@@ -71,6 +66,16 @@ export default class TransactionForm extends LightningElement {
           label: "here"
         }
       ]
+    });
+    this.dispatchEvent(event);
+  }
+
+  // handle error toast event
+  handleErrorEvt() {
+    const event = new ShowToastEvent({
+      title: "Error",
+      message: "An error occurred while fetching the data",
+      variant: "error"
     });
     this.dispatchEvent(event);
   }
