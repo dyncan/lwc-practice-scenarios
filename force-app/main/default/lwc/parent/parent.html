@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Select Type" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox name="inputType" label="Select Input Type" value={selectedValue} options={options}
+                onchange={handleChange}></lightning-combobox>
+
+            <template if:true={showChildComponent}>
+                <c-child selected-item={selectedValue}></c-child>
+            </template>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,13 @@
+<template>
+    <template lwc:if={showNameInput}>
+        <lightning-input label="Name"></lightning-input>
+    </template>
+
+    <template lwc:if={showPhoneInput}>
+        <lightning-input label="Phone"></lightning-input>
+    </template>
+
+    <template lwc:if={showEmailInput}>
+        <lightning-input label="Email" type="email"></lightning-input>
+    </template>
+</template>

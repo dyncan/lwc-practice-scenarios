@@ -16,7 +16,11 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 [LWC EXCHANGE – SCENARIO 6](https://salesforcediaries.com/2022/10/01/lwc-exchange-scenario-6/)
 
 - Source code: [transactionForm](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/transactionForm)
-  
+
+[LWC EXCHANGE – SCENARIO 3](https://salesforcediaries.com/2022/09/17/lwc-exchange-scenario-3/)
+
+- Source code: [parent](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/parent)
+- Source code: [child](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/child)
 ## Installation
 
 1. Run `chmod +x ./install-dev.sh` to set the execute permission.
