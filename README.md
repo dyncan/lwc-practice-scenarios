@@ -36,6 +36,6 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 
 2. Run `./install-dev.sh YOUR_SCRATCH_ORG_ALIAS` to create a scratch org and push the source code to org.
 
-3. Run `sfdx force:org:open` to open the scratch org.
+3. After the bash script is executed, it will automatically open the scratch org.
 
 4. Add lwc components to home page.
