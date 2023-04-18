@@ -1,0 +1,29 @@
+<template>
+    <lightning-card title="Latitude &amp; Longitude Calculator" icon-name="custom:custom64">
+        <div class="slds-var-m-around_medium">
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-input label="Latitude 1" name="lat1" type="number" min="0" max="90" placeholder="(0-90)"
+                        onchange={handleInputChange}></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-input label="Longitude 1" name="lon1" type="number" min="0" max="180"
+                        placeholder="(0-180)" onchange={handleInputChange}></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-input label="Latitude 2" name="lat2" type="number" min="0" max="90" placeholder="(0-90)"
+                        onchange={handleInputChange}></lightning-input>
+                </lightning-layout-item>
+                <lightning-layout-item size="6" padding="around-small">
+                    <lightning-input label="Longitude 2" name="lon2" type="number" min="0" max="180"
+                        placeholder="(0-180)" onchange={handleInputChange}></lightning-input>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-button class="slds-m-around_small" label="Calculate Distance"
+                onclick={handleClick}></lightning-button>
+            <div class="slds-m-around_small" lwc:if={distance} style="color: #468847;">
+                <p>Distance: <strong style="font-size:16px;">{distance} kilometer</strong></p>
+            </div>
+        </div>
+    </lightning-card>
+</template>

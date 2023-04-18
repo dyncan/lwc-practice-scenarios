@@ -4,18 +4,22 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 
 ## Scenario Solutions
 
+[LWC EXCHANGE – SCENARIO 8](https://salesforcediaries.com/2023/04/16/lwc-exchange-scenario-8/)
+
+- Source code: [publicApiCallout](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/publicApiCallout)
+
 [LWC EXCHANGE – SCENARIO 7](https://salesforcediaries.com/2022/10/21/lwc-exchange-scenario-7/)
 
 - Source code: [dataFiller](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/dataFiller)
 - Source code: [personTable](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/personTable)
 
-[LWC EXCHANGE – SCENARIO 8](https://salesforcediaries.com/2023/04/16/lwc-exchange-scenario-8/)
-
-- Source code: [publicApiCallout](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/publicApiCallout)
-
 [LWC EXCHANGE – SCENARIO 6](https://salesforcediaries.com/2022/10/01/lwc-exchange-scenario-6/)
 
 - Source code: [transactionForm](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/transactionForm)
+
+[LWC EXCHANGE – SCENARIO 4](https://salesforcediaries.com/2022/09/20/lwc-exchange-scenario-4/)
+
+- Source code: [distanceCalculator](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/distanceCalculator)
 
 [LWC EXCHANGE – SCENARIO 3](https://salesforcediaries.com/2022/09/17/lwc-exchange-scenario-3/)
 
@@ -25,6 +29,7 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 [LWC EXCHANGE – SCENARIO 2](https://salesforcediaries.com/2022/09/17/lwc-exchange-scenario-2/)
 
 - Source code: [calculator](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/calculator)
+
 ## Installation
 
 1. Run `chmod +x ./install-dev.sh` to set the execute permission.
