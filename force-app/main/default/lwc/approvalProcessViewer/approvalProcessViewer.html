@@ -1,0 +1,26 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card title="Approval Process Viewer" icon-name="standard:approval">
+        <div class="slds-m-around_medium">
+            <lightning-tabset variant="scoped">
+                <lightning-tab label="Account">
+                    <lightning-button icon-name="utility:download" label="Download CSV" title="Download CSV File"
+                        onclick={downloadCSVFile} data-type="account" variant="brand"></lightning-button>
+                    <lightning-tree-grid columns={accountColumns} data={accounts}
+                        key-field="name"></lightning-tree-grid>
+                </lightning-tab>
+                <lightning-tab label="Opportunity">
+                    <lightning-button icon-name="utility:download" label="Download CSV" title="Download CSV File"
+                        onclick={downloadCSVFile} data-type="opportunity" variant="brand"></lightning-button>
+                    <lightning-tree-grid columns={oppColumns} data={opportunities}
+                        key-field="name"></lightning-tree-grid>
+                </lightning-tab>
+                <lightning-tab label="Case">
+                    <lightning-button icon-name="utility:download" label="Download CSV" title="Download CSV File"
+                        onclick={downloadCSVFile} data-type="case" variant="brand"></lightning-button>
+                    <lightning-tree-grid columns={caseColumns} data={cases} key-field="id"></lightning-tree-grid>
+                </lightning-tab>
+            </lightning-tabset>
+        </div>
+    </lightning-card>
+</template>

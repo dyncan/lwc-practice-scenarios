@@ -30,6 +30,10 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 
 - Source code: [calculator](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/calculator)
 
+[LWC EXCHANGE – SCENARIO 1](https://salesforcediaries.com/2022/09/17/lwc-exchange-scenario-1/)
+
+- Source code: [approvalProcessViewer](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/approvalProcessViewer)
+
 ## Installation
 
 1. Run `chmod +x ./install-dev.sh` to set the execute permission.
