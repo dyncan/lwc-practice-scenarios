@@ -79,6 +79,7 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
     <img src="screenshots/lwc-practice-scenario-01-03.png" width="100%" alt="LWC EXCHANGE – SCENARIO 1"/>
 </div>
 
+
 ## Installation
 
 1. Run `chmod +x ./install-dev.sh` to set the execute permission.
