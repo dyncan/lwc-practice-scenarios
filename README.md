@@ -4,6 +4,16 @@ This project was inspired by [lwc-practice-scenario](https://salesforcediaries.c
 
 ## Scenario Solutions
 
+[LWC EXCHANGE – SCENARIO 9](https://salesforcediaries.com/2023/04/21/lwc-exchange-scenario-9/)
+
+- Source code: [accountCreation](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/accountCreation)
+
+<div align="center">
+	<img src="screenshots/lwc-practice-scenario-09-01.png" width="100%" alt="LWC EXCHANGE – SCENARIO 9"/>
+	<img src="screenshots/lwc-practice-scenario-09-02.png" width="100%" alt="LWC EXCHANGE – SCENARIO 9"/>
+	<img src="screenshots/lwc-practice-scenario-09-03.png" width="100%" alt="LWC EXCHANGE – SCENARIO 9"/>
+</div>
+
 [LWC EXCHANGE – SCENARIO 8](https://salesforcediaries.com/2023/04/16/lwc-exchange-scenario-8/)
 
 - Source code: [publicApiCallout](https://github.com/dyncan/lwc-scenarios/tree/main/force-app/main/default/lwc/publicApiCallout)

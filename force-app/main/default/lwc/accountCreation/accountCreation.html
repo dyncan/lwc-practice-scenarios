@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Create Account &amp; Contact" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+            </template>
+            <lightning-input label="Account Name" name="accountName" required value={accountName}
+                onchange={handleFiledChange}></lightning-input>
+            <lightning-input label="Account Website" name="accountWebsite" value={accountWebsite}
+                onchange={handleFiledChange}></lightning-input>
+            <lightning-input label="Contact First Name" name="contactFirstName" value={contactFirstName}
+                onchange={handleFiledChange}></lightning-input>
+            <lightning-input label="Contact Last Name" name="contactLastName" required value={contactLastName}
+                onchange={handleFiledChange}></lightning-input>
+            <lightning-input label="Contact Email" type="email" name="contactEmail" value={contactEmail}
+                onchange={handleFiledChange}></lightning-input>
+            <lightning-input label="Contact Phone Number" type="tel" name="contactPhoneNumber"
+                value={contactPhoneNumber} onchange={handleFiledChange}></lightning-input>
+            <lightning-file-upload label="Upload File(accept: .pdf, .png, .jpg, .xlsx, .xls, .csv, .doc, .docx)"
+                accept={acceptedFormats} onuploadfinished={handleUploadFinished} multiple></lightning-file-upload>
+
+            <div class="slds-align_absolute-center">
+                <lightning-button-group>
+                    <lightning-button label="Save" data-type="save" icon-name="utility:save"
+                        onclick={handleSave}></lightning-button>
+                    <lightning-button label="Save and New" data-type="save-new" onclick={handleSave}></lightning-button>
+                    <lightning-button label="Cancel" accesskey="x" onclick={handleCancel}></lightning-button>
+                </lightning-button-group>
+                <lightning-helptext
+                    content="You can use the access key to clear form, press the following keys: Mac: Control + Option + x, Windows:  Alt + x, Firefox on Windows:  Alt + Shift + x"></lightning-helptext>
+            </div>
+        </div>
+    </lightning-card>
+</template>
